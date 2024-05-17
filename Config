@@ -44,7 +44,7 @@ QA_QSUB="mem=1gb,nodes=1:ppn=4,walltime=12:00:00"
 #   QUEUE=Slurm: What are our sbatch settings?
 #       Below are the recommended settings
 
-PARTITION="batch"
+PARTITION="general"
 QA_SBATCH="--nodes=1 --ntasks=4 --mem=5gb --time=06:00:00 --mail-type=BEGIN,END,FAIL --mail-user=${EMAIL} --partition=${PARTITION}"
 
 #   What is the file name suffix for files to be assessed?
@@ -72,7 +72,7 @@ AT_QSUB="mem=10gb,nodes=1:ppn=4,walltime=12:00:00"
 
 #   QUEUE=Slurm: What are our sbatch settings?
 #       Below are the recommended settings
-AT_PARTITION="batch"
+AT_PARTITION="general"
 AT_SBATCH="--nodes=1 --ntasks-per-node=4 --mem=13gb --time=12:00:00 --mail-type=BEGIN,END,FAIL --mail-user=${EMAIL} --partition=${AT_PARTITION}"
 
 #   What files to trim?
@@ -153,7 +153,7 @@ GI_QSUB="mem=50gb,nodes=1:ppn=4,walltime=450:00:00"
 
 #   QUEUE=Slurm: What are our sbatch settings?
 #       Below are the recommended settings
-PARTITION="batch"
+PARTITION="general"
 GI_SBATCH="--nodes=1 --ntasks=4 --mem=80gb --time=96:00:00 --mail-type=BEGIN,END,FAIL --mail-user=${EMAIL} --partition=${PARTITION}"
 
 #	Define the number of threads to be used. 
@@ -207,7 +207,7 @@ FJ_QSUB="mem=22gb,nodes=1:ppn=4,walltime=4:00:00"
 
 #   QUEUE=Slurm: What are our sbatch settings?
 #       Below are the recommended settings
-PARTITION="batch"
+PARTITION="general"
 FJ_SBATCH="--nodes=1 --ntasks=4 --mem=22gb --time=04:00:00 --mail-type=BEGIN,END,FAIL --mail-user=${EMAIL} --partition=${PARTITION}"
 
 
@@ -246,7 +246,7 @@ RM_QSUB="mem=50gb,nodes=1:ppn=16,walltime=450:00:00"
 
 #   QUEUE=Slurm: What are our sbatch settings?
 #       Below are the recommended settings
-RM_PARTITION="batch"
+RM_PARTITION="general"
 RM_SBATCH="--nodes=1 --ntasks=16 --mem=50gb --time=45:00:00 --partition=${PARTITION}"
 
 
