@@ -60,7 +60,7 @@ QA_INPUTDIR="/scratch/Bidens_scratch/rawdata"
 QA_OUTPUTDIR="/scratch/Bidens_scratch/rawdata"
 
 #	A place for FASTQC to store temporary files
-QA_TEMP="/scratch/Bidens_scratch/temp"
+QA_TEMP="/scratch/Bidens_scratch/mapping_may2024/temp"
 
 ############################################
 ##########    Adapter_Trimming    ##########
@@ -164,7 +164,7 @@ NTHREAD=4
 #	This direcotry has to be created before program will run and needs writing permissions
 #	This directory path will also be used in the next read mapping step
 #	Include the full filepath
-GEN_DIR="/scratch/Bidens_scratch/genome/genome_indices"
+GEN_DIR="/scratch/Bidens_scratch/mapping_may2024/genome/genome_indices"
 
 #   Specify the length of genomic sequence to be used in constructing the splice junctions database.
 #   This length should be equal to ReadLength-1, where ReadLength is the length of reads
@@ -189,7 +189,7 @@ GENE_PARENT="Parent"
 ###### IMPORTANT: This step shares variables with Read-Mapping (below)
 
 #   Where do you want your output files to go? Include the full file path
-CJ_OUTPUTDIR="/scratch/Bidens_scratch/star_outputs/junction_data"
+CJ_OUTPUTDIR="/scratch/Bidens_scratch/mapping_may2024/star_outputs/junction_data"
 #       File name/path of where JOB IDs should be recorded
 CJ_JOB_LOG="/scratch/Bidens_scratch/CJ_job_log.txt"
 
@@ -213,7 +213,7 @@ FJ_SBATCH="--nodes=1 --ntasks=4 --mem=22gb --time=04:00:00 --mail-type=BEGIN,END
 
 #	Where are the "SJ.out.tab" files? Include the full filepath
 #	This will also be where the concatenated filtered list is put
-JUNCTIONDIR="/scratch/Bidens_scratch/star_outputs/junction_data"
+JUNCTIONDIR="/scratch/Bidens_scratch/mapping_may2024/star_outputs/junction_data"
 
 #	Name of final list (will end in SJ.filtered.tab)
 SJ_LISTNAME="Bidens_"
@@ -265,7 +265,7 @@ FORWARD="_1.fq.gz"
 REVERSE="_2.fq.gz"
 
 #   Where do you want your output files to go? Include the full file path
-RM_OUTPUTDIR="/scratch/Bidens_scratch/star_outputs"
+RM_OUTPUTDIR="/scratch/Bidens_scratch/mapping_may2024/star_outputs"
 
 #	Define the number of threads to be used. 
 #	This must be set to the number of available cores on the server node
@@ -325,7 +325,7 @@ QUANT="GeneCounts"
 #		2.) If you have more than one filtered junction list (if Collect_Junctions was run with multiple sample groups),
 #			this variable can be a text file listing the full file paths for each junction file you want included	
 #	If not using additional junctions, leave blank
-FILTERED_JUNC_LIST="/scratch/Bidens_scratch/star_outputs/junction_data/Bidens__SJ.filtered.tab"
+FILTERED_JUNC_LIST="/scratch/Bidens_scratch/mapping_may2024/star_outputs/junction_data/Bidens__SJ.filtered.tab"
 
 #### CURRENTLY DEPRECATED: 
 #### (MODULES SPECIFIC TO HANDLERS NOW SPECIFIED IN SCRIPT FILE)
