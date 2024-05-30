@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # read in the STAR module
-ml STAR/2.7.10a-GCC-8.3.0
+ml star/2.7.5
 
 set -o pipefail
 
