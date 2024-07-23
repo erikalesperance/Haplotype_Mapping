@@ -1,5 +1,5 @@
 # Haplotype_Mapping
-Pipeline for mapping RNAseq reads (from leaf tissue, SAM, and the floral dev stages used for genome annotations) to each haplotype of Bidens cv. Compact Yellow. Buit from Emily Yaklich's sunflower dev_RNAseq pipeline: https://github.com/erikalesperance/dev_RNAseq/blob/main/README.md
+Pipeline for mapping RNAseq reads (from leaf tissue, SAM, and the floral dev stages used for genome annotations) to each haplotype of Bidens cv. Compact Yellow. Built from Emily Yaklich's sunflower dev_RNAseq pipeline: https://github.com/erikalesperance/dev_RNAseq/blob/main/README.md
 
 
 Programs used: 
